@@ -24,3 +24,6 @@ np.percentile(arr2,50)
 np.mean(arr2)
 np.median(arr2)
 
+#5
+from numpy import random
+s = np.random.normal(loc=3,scale=4,size=100)
