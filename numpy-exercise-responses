@@ -1,0 +1,26 @@
+#1 
+arr = np.arange(12).reshape(4,3)
+arr
+
+#2
+arr2 = np.arange(16)
+print(np.shape(arr2))
+arr2_copy = arr2.copy()
+print(arr2)
+print(arr2_copy)
+arr2 = arr2.reshape(4,4)
+print(arr2)
+print(arr2_copy)
+
+#3
+arr2.ndim
+arr2.shape
+arr2.size
+arr2.dtype
+arr2.data
+
+#4
+np.percentile(arr2,50)
+np.mean(arr2)
+np.median(arr2)
+
