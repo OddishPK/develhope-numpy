@@ -29,7 +29,8 @@ from numpy import random
 s = np.random.normal(loc=3,scale=4,size=100)
 
 #6
+import matplotlib.pyplot as plt
 x = s
-y = len(s)
+y = np.arange(0,100)
 plt.bar(x,y,width=0.8)
 plt.show()
