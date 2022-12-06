@@ -27,3 +27,9 @@ np.median(arr2)
 #5
 from numpy import random
 s = np.random.normal(loc=3,scale=4,size=100)
+
+#6
+x = s
+y = len(s)
+plt.bar(x,y,width=0.8)
+plt.show()
