@@ -30,10 +30,12 @@ s = np.random.normal(loc=3,scale=4,size=100)
 
 #6
 import matplotlib.pyplot as plt
-x = s
-y = np.arange(0,100)
-plt.bar(x,y,width=0.8)
-plt.show()
+#x = s
+#y = np.arange(0,100)
+#plt.bar(x,y,width=0.8)
+#plt.show()
+
+plt.hist(s,log = False)
 
 #7
 import pandas as pd 
@@ -59,4 +61,5 @@ df.loc[df["incidents_85_99"] < 10, ["airline", "incidents_85_99"]]
 df["airline_first_letter"] = df.airline.str[0]
 df["airline_first_letter"] = df.airline_first_letter.str.lower()
 df1 = df.groupby("airline_first_letter").incidents_85_99.mean()
-df1.reset_index()
+#df1.reset_index()
+df1_1 = df1.to_frame()
